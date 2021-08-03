@@ -1,20 +1,76 @@
-.container{
-    margin-top: 4%;
+header {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
 }
-.inner{
-    overflow: hidden;
+.navbar {
+padding: 20px 0;
 }
-.inner img{
-    transition: all 1.5s ease;
+.navbar-brand {
+font-weight: 800;
+text-transform: uppercase;
+font-size: 2em;
+color: #262626;
 }
-.inner :hover img{
-    transform: scale(1.5);
+.nav-item {
+	font-weight: 800;
+	text-transform: uppercase;
 }
-.jumbotron {
-    background-image: url(background.jpg);
-    background-size: cover;
-    background-position: center;
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .active .nav-link {
+	background: #262626;
+	color: #fff;
+
 }
-.jumbotron h1 {
-    margin: 30px 0;
+.navbar-light .navbar-nav .nav-item .nav-link {
+	color: #262626;
+	padding: 5px 15px;
+}
+.banner {
+	position: relative;
+	background: url(bkg.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	padding: 250px 0 200px;
+
+}
+.banner h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 2.8em;
+	font-weight: 1000;
+	color: #262626;
+	text-transform: uppercase;
+}
+.banner p {
+	margin: 1em 0 0;
+	padding: 0;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: #262626;
+}
+.btnD1 {
+	display: inline-block;
+	margin: 1em 0 0;
+	background: darkgrey;
+	color: #fff;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	border: none;
+	font-weight: 800;
+}
+.btnD1:hover {
+	color: #fff;
+	text-decoration: none;
+	
+}
+.navbar-light .navbar-toggler {
+	border: none;
+	color: #fff;
+	border: 2px solid solid #7f7f7f;
+	border-radius: 0;
+	outline: none; 
+}
+@media (max-width: 768px) {
 }
